@@ -51,8 +51,33 @@ You are expected to choose a topic, analyze the problem, the data, and the relat
 - Node.js and npm installed
 - Backend server running (Spring Boot application)
 
+## How to Run
+
+### Prerequisites
+
+- Node.js and npm installed
+- Backend server running (Spring Boot application)
+
 ### Running the Frontend
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/expense-tracker-app-front-end.git
+    ```bash
+    git clone https://github.com/your-username/expense-tracker-app-front-end.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd expense-tracker-app-front-end
+    ```
+
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+4. Start the development server:
+    ```bash
+    npm start
+    ```
+
+5. Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
