@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.input-section, .category-section, .payment-method-section, .user-section, .income-section, .expense-summary-section, .expense-chart-section, .recent-expenses-section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.input-section div, .category-section div, .payment-method-section div, .user-section div, .income-section div, .expense-summary-section div, .input-section button, .category-section button, .payment-method-section button, .user-section button, .income-section button, .expense-summary-section button {
+  margin: 10px 0;
+}
+
+.input-section label, .category-section label, .payment-method-section label, .user-section label, .income-section label, .expense-summary-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-section input, .input-section select, .category-section input, .payment-method-section input, .user-section input, .income-section input, .expense-summary-section select, .income-section select {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calculation-buttons {
+  margin: 20px 0;
+  width: 60%;
+  margin: 20px auto;
+}
+
+.calculation-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calculation-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.summary-section > div {
+  margin: 10px 0;
+}
+
+.expenses-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.expense-item div {
+  flex: 1;
+  text-align: left;
+}
+
+.expense-item:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+button:hover {
+  background-color: #45a049;
+}
