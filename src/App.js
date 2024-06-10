@@ -85,6 +85,7 @@ function App() {
   const fetchExpenses = async () => {
       try {
         const expensesData = await getExpenses();
+        console.log('Expenses:', expensesData);
         setExpenses(expensesData);
       } catch (error) {
         console.error('Error fetching expenses', error);
@@ -103,11 +104,11 @@ function App() {
  const handleAddExpense = async () => {
    const newExpense = {
      user_id: selectedUser,
-     category_id: category,
-     amount: amount,
+     category_id: parseInt(category),
+     amount: parseFloat(amount),
      date: date.toISOString().split('T')[0], // Format date to YYYY-MM-DD
      description: description,
-     payment_method_id: paymentMethod
+     payment_method_id: parseInt(paymentMethod)
    };
 
    try {
@@ -309,10 +310,10 @@ const handleAddPaymentMethod = async () => {
             </div>
             <div>
               <label>Category:</label>
-              <select value={category} onChange={(e) => setCategory(e.target.value)}>
+              <select value={category} onChange={(e) => setCategory(parseInt(e.target.value))}>
                 <option value="">Select Category</option>
                 {categories.map(cat => (
-                  <option key={cat.category_id} value={cat.category_name}>{cat.category_name}</option>
+                  <option key={cat.category_id} value={cat.category_id}>{cat.category_name}</option>
                 ))}
               </select>
             </div>
