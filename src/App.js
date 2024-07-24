@@ -133,6 +133,7 @@ function App() {
       source: incomeDescription
     };
     try {
+          console.log('Sending request to add income:', newIncome);
           await createIncome(newIncome);
           setIncomeDate(new Date());
           setIncomeAmount('');

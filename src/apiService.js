@@ -102,10 +102,10 @@ export const findHighestExpense = async (userId) => {
 };
 
 export const calculateRemainingBudget = async (userId) => {
-  const response = await axios.get(`${API_BASE_URL}/calculations/remainingBudget`, {
-    params: { userId }
-  });
-  return response.data;
+    const response = await axios.get(`${API_BASE_URL}/calculations/remainingBudget`, {
+        params: { userId }
+    });
+    return response.data;
 };
 
 // Expense Summary APIs
